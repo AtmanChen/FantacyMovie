@@ -1,0 +1,68 @@
+PODS:
+  - Alamofire (4.8.1)
+  - ContextMenu (0.4.0)
+  - Differentiator (3.1.0)
+  - GSKStretchyHeaderView (1.0.4)
+  - Nuke (7.5.2)
+  - RxAlamofire (4.3.0):
+    - RxAlamofire/Core (= 4.3.0)
+  - RxAlamofire/Core (4.3.0):
+    - Alamofire (~> 4.5)
+    - RxSwift (~> 4)
+  - RxAtomic (4.4.1)
+  - RxCocoa (4.4.1):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.1.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxNuke (0.7):
+    - Nuke (~> 7.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.1):
+    - RxAtomic (~> 4.4)
+  - XLPagerTabStrip (8.1.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - ContextMenu
+  - GSKStretchyHeaderView
+  - RxAlamofire
+  - RxCocoa
+  - RxDataSources
+  - RxNuke
+  - RxSwift
+  - XLPagerTabStrip
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - ContextMenu
+    - Differentiator
+    - GSKStretchyHeaderView
+    - Nuke
+    - RxAlamofire
+    - RxAtomic
+    - RxCocoa
+    - RxDataSources
+    - RxNuke
+    - RxSwift
+    - XLPagerTabStrip
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  ContextMenu: f835e09a93f1c28c631b76ee94396d9570397fd1
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  GSKStretchyHeaderView: 9743704c12bdc9cf7c7947bad3af8bf24f7061e3
+  Nuke: 0350d346a688426e8f2331253ef28dc2fc4f6178
+  RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
+  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
+  RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
+  RxNuke: 8be1b71b08b238608834e5ffac597bcafab1e66f
+  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  XLPagerTabStrip: 63166e21c9844fa30f2d95d30f335e73be5caf22
+
+PODFILE CHECKSUM: 99167b0a6d4beef3dd8f31750a2157d24f9eaf1a
+
+COCOAPODS: 1.6.0
