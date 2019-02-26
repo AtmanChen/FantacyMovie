@@ -14,7 +14,6 @@ import RxAlamofire
 
 final class Network<T: Decodable> {
     
-    
     private let endPoint: String
     private let scheduler: ConcurrentDispatchQueueScheduler
     
@@ -23,6 +22,17 @@ final class Network<T: Decodable> {
         self.scheduler = ConcurrentDispatchQueueScheduler(qos: DispatchQoS(qosClass: .background, relativePriority: 1))
     }
     
+    func getFilms(_ path: String) -> Observable<[OdeonFilm]> {
+        let absoluePath = "\(endPoint)/\(path)"
+        return RxAlamofire
+            .data(.get, absoluePath)
+            .debug()
+            .observeOn(scheduler)
+            .map { data -> [OdeonFilm] in
+                let response = try JSONDecoder().decode(ListFilmsResponse.self, from: data)
+                return response.data.films
+            }
+    }
     
     func getItems(_ path: String) -> Observable<T> {
         let absoluePath = "\(endPoint)/\(path)"
@@ -35,4 +45,6 @@ final class Network<T: Decodable> {
                 return response.data
             }
     }
+    
+    
 }

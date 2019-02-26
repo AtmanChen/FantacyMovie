@@ -22,4 +22,9 @@ public final class NetworkProvider {
         let network = Network<[OdeonFilmInCinema]>(apiEndpoint)
         return CinemaFilmNetwork(network: network)
     }
+    
+    public func makeFilmsNetwork() -> FilmsNetwork {
+        let network = Network<[OdeonFilm]>(apiEndpoint)
+        return FilmsNetwork(network: network)
+    }
 }

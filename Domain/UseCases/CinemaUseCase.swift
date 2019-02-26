@@ -1,5 +1,5 @@
 //
-//  CinemaUseCaseProvider.swift
+//  CinemaUseCase.swift
 //  Domain
 //
 //  Created by 突突兔 on 2019/2/19.
@@ -7,7 +7,8 @@
 //
 
 import Foundation
+import RxSwift
 
-public protocol CinemaUseCaseProvider {
-    func makeCinemaUseCase() -> CinemaUseCase
+public protocol CinemaUseCase {
+    func cinemaFilm() -> Observable<[OdeonFilmInCinema]>
 }

@@ -17,7 +17,6 @@ public final class CinemaFilmNetwork {
 
     init(network: Network<[OdeonFilmInCinema]>) {
         self.network = network
-        
     }
     
     public func getCinemaFilm() -> Observable<[OdeonFilmInCinema]> {
@@ -28,5 +27,7 @@ public final class CinemaFilmNetwork {
         let dateString = dateFormatter.string(from: date)
         return network.getItems("films-by-cinema/s/\(siteID)/date/\(dateString)")
     }
+    
+    
     
 }
